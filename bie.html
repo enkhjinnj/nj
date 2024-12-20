@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilaxie Corset</title>
+
+    <link rel="stylesheet" href="bie.css">
+
+    <style>
+        .carousel-inner img {
+            object-fit: cover;
+            height: 500px;
+            width: 100%;
+        }
+        .btn-primary:active {
+            background-color: #ff6d86 !important; 
+            border-color: #ff6d86 !important;
+        }
+
+        .btn-primary:hover {
+            background-color: rgb(230, 150, 130); 
+            border-color: rgb(230, 150, 130);
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://i.pinimg.com/736x/55/71/43/5571430bbea37ab0bb4a3d2716f004b6.jpg" class="d-block w-100" alt="Logo">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/736x/69/32/ce/6932ced1ac6aaa095ce2af6b2d33f8d4.jpg" class="d-block w-100" alt="Screenshot 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/736x/59/97/7e/59977ee5de7e98adc55649063484e6fd.jpg" class="d-block w-100" alt="Screenshot 2">
+                </div>
+            </div>
+
+            <!-- Previous button -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <!-- Next button -->
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+    <div class="d-flex align-items-center my-3">
+        <!-- Dropdown -->
+        <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                Ангилал
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="bie.html">Үндсэн цэс</a></li>
+                <li><a class="dropdown-item" href="corset.html">Corset</a></li>
+                <li><a class="dropdown-item" href="underbust.html">Underbust Corset</a></li>
+                <li><a class="dropdown-item" href="accessory.html">Зүүлт гоёл</a></li>
+                <li><a class="dropdown-item" href="about.html">About</a></li>
+        
+
+            </ul>
+        </div>
+
+        <!-- Search Input -->
+        <form class="d-flex" action="search_results.html" method="GET">
+            <input class="form-control me-2" type="search" name="query" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.querySelector('input[type="search"]');
+            const productCards = document.querySelectorAll(".card");
+    
+            searchInput.addEventListener("input", function () {
+                const query = searchInput.value.toLowerCase();
+    
+                productCards.forEach(card => {
+                    const title = card.querySelector(".card-title").textContent.toLowerCase();
+                    const description = card.querySelector(".card-text").textContent.toLowerCase();
+    
+                    // Show or hide the card based on the search query
+                    if (title.includes(query) || description.includes(query)) {
+                        card.parentElement.style.display = ""; // Show
+                    } else {
+                        card.parentElement.style.display = "none"; // Hide
+                    }
+                });
+            });
+        });
+    </script>
+    
+
+        <div class="container-fluid mt-5">
+            <h2>Цоо Шинэ</h2>
+            <div class="row g-4 ms-5"> 
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card" style="width: 20rem;">
+                        <img src="https://i.pinimg.com/736x/8d/68/1d/8d681d0930a2f110e108b636383288a0.jpg" style="height: 10cm;" class="card-img-top" alt="corset">
+                        <div class="card-body">
+                            <h5 class="card-title">Full Corset</h5>
+                            <p class="card-text">Floral</p>
+                            <h6>168'000₮</h6>
+                            <a href="uzeh.html?name=Floral&price=168000&image=https://i.pinimg.com/736x/8d/68/1d/8d681d0930a2f110e108b636383288a0.jpg" class="btn btn-primary">Үзэх</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-6">
+                    <div class="card" style="width: 20rem;">
+                        <img src="https://i.pinimg.com/736x/ae/67/b9/ae67b90081234f595e8ceae573fa1061.jpg" style="height: 10cm;" 
+                        class="card-img-top" alt="corset">
+                        <div class="card-body">
+                            <h5 class="card-title">Full Corset</h5>
+                            <p class="card-text">Kiss and Makeup</p>
+                            <h6>175'000₮</h6>
+                            <a href="uzeh.html?name=Kiss%20And%20MakeUp&price=175000&image=https://i.pinimg.com/736x/ae/67/b9/ae67b90081234f595e8ceae573fa1061.jpg" class="btn btn-primary">Үзэх</a>
+                        </div>
+                    </div>
+                </div>
+
+        
+                <div class="col-lg-4 col-md-6">
+                    <div class="card" style="width: 20rem;">
+                        <img src="https://i.pinimg.com/736x/96/18/33/96183388702e93a35deb4940bfb9bee5.jpg" style="height: 10cm;" class="card-img-top" alt="corset">
+                        <div class="card-body">
+                            <h5 class="card-title">Full Corset</h5>
+                            <p class="card-text">Red Crane</p>
+                            <h6>140'000</h6>
+                            <a href="uzeh.html?name=Red%20Crane&price=140000&image=https://i.pinimg.com/736x/96/18/33/96183388702e93a35deb4940bfb9bee5.jpg" class="btn btn-primary">Үзэх</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        
+        </div>
+        
+        
+
+
+
+        <!-- About Section -->
+        <div class="about-section mt-5">
+            <div class="container">
+                <div class="row">
+                    <!-- About Text -->
+                    <div class="col-md-8">
+                        <h2 class="about-title">Бид</h2>
+                        <p class="about-text">
+                            <strong>Lilaxie Corset</strong> маань 2015 оноос хойш үйл ажиллагаагаа тасралтгүй явуулсаар ирсэн билээ. Бид өөрсдийн дэлгүүрээ нээж охидынхоо дуртай хувцаснуудыг бэлэн худалдаалдаг бөгөөд инстаграмаар голчлон сошиал үйл ажиллагаагаа явуулдаг байсан.
+                            Манай дэлгүүрт ирж худалдан авалт хийх боломжгүй, завгүй байгаа хүмүүсдээ зориулан энэхүү сайтаа нээж, захиалга авахад бэлэн боллоо. 
+                            Өөрсдөө корсетуудаа хийдэг ба салбар дээр ирээд өөрийн биеийн харьцаа, сонирхолдоо тохируулан захиалж болно.
+                            Та хамгийн загварлаг, чанартай корсетуудаа манайхаас сонгоорой.
+                        </p>
+                        <p class="about-text">
+                            Хаяг:
+                            Их дэлгүүрийн чанх хойно Pearl tower-н урд , 3-р байр
+                            Everyday 10:00-20:00
+                        </p>
+                    </div>
+    
+                    <!-- Quick Links or Contact -->
+                    <div class="col-md-4">
+                        <h4 class="about-title">Quick Links</h4>
+                        <ul class="list-unstyled about-links">
+                            <li><a href="bie.html">Үндсэн цэс</a></li>
+                            <li><a href="about.html">Бидний тухай</a></li>
+                            <li><a href="contact.html">Холбоо барих</a></li>
+                            <li><a href="care.html">Арчилгаа</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

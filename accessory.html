@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessory</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="bie.css">
+
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
+
+
+    <div class="container">
+        <div class="d-flex align-items-center my-3">
+            <!-- Dropdown -->
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                    Ангилал
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="bie.html">Үндсэн цэс</a></li>
+                    <li><a class="dropdown-item" href="corset.html">Corset</a></li>
+                    <li><a class="dropdown-item" href="underbust.html">Underbust Corset</a></li>
+                    <li><a class="dropdown-item" href="accessory.html">Зүүлт гоёл</a></li>
+                    <li><a class="dropdown-item" href="about.html">About</a></li>
+            
+    
+                </ul>
+            </div>
+            <!-- Search Input -->
+        <form class="d-flex" action="search_results.html" method="GET">
+            <input class="form-control me-2" type="search" name="query" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const searchInput = document.querySelector('input[type="search"]');
+                const productCards = document.querySelectorAll(".card");
+        
+                searchInput.addEventListener("input", function () {
+                    const query = searchInput.value.toLowerCase();
+        
+                    productCards.forEach(card => {
+                        const title = card.querySelector(".card-title").textContent.toLowerCase();
+                        const description = card.querySelector(".card-text").textContent.toLowerCase();
+        
+                        // Show or hide the card based on the search query
+                        if (title.includes(query) || description.includes(query)) {
+                            card.parentElement.style.display = ""; // Show
+                        } else {
+                            card.parentElement.style.display = "none"; // Hide
+                        }
+                    });
+                });
+            });
+        </script>
+    </div>
+
+
+    <div class="container-fluid mt-5" style="padding: 25px;">
+        <div class="row g-4 ms-5"> 
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="card" style="width: 20rem;";>
+                    <img src="https://i.pinimg.com/736x/09/77/72/097772be4a7e18ba3b642e630046025f.jpg" style="height: 10cm;" class="card-img-top" alt="necklace">
+                    <div class="card-body">
+                        <h5 class="card-title">Хүзүүний зүүлт</h5>
+                        <p class="card-text">Purple dream</p>
+                        <h6>38'000</h6>
+                        <a href="uzeh.html?name=Purple%20Dream&price=38000&image=https://i.pinimg.com/736x/09/77/72/097772be4a7e18ba3b642e630046025f.jpg" class="btn btn-primary">Үзэх</a>
+                    </div>
+                </div>
+            </div>
+    
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card" style="width: 20rem;">
+                    <img src="https://i.pinimg.com/736x/35/86/94/35869402b2181767c8aae41812d3903d.jpg" style="height: 10cm;" class="card-img-top" alt="necklace">
+                    <div class="card-body">
+                        <h5 class="card-title">Хүзүүний зүүлт</h5>
+                        <p class="card-text">Shining green</p>
+                        <h6>29'000</h6>
+                        <a href="uzeh.html?name=Shining%20Green&price=29000&image=https://i.pinimg.com/736x/35/86/94/35869402b2181767c8aae41812d3903d.jpg" class="btn btn-primary">Үзэх</a>
+                    </div>
+                </div>
+            </div>
+    
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card" style="width: 20rem;">
+                    <img src="https://i.pinimg.com/736x/2d/f1/f2/2df1f2b3b6a0acf78727e5d7fd3a6f6f.jpg" style="height: 10cm;" class="card-img-top" alt="necklace" >
+                    <div class="card-body">
+                        <h5 class="card-title">Хүзүүний зүүлт</h5>
+                        <p class="card-text">Moonnight</p>
+                        <h6>32'000</h6>
+                        <a href="uzeh.html?name=Moonnight&price=32000&image=https://i.pinimg.com/736x/2d/f1/f2/2df1f2b3b6a0acf78727e5d7fd3a6f6f.jpg" class="btn btn-primary">Үзэх</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6"> 
+                <div class="card" style="width: 20rem;">
+                    <img src="https://i.pinimg.com/736x/3c/a7/e5/3ca7e596499733a16c7860d889b71d96.jpg" style="height: 10cm;" class="card-img-top" alt="necklace">
+                    <div class="card-body">
+                        <h5 class="card-title">Хүзүүний зүүлт</h5>
+                        <p class="card-text">Moon</p>
+                        <h6>34'000</h6>
+                        <a href="uzeh.html?name=Moon&price=34000&image=https://i.pinimg.com/736x/3c/a7/e5/3ca7e596499733a16c7860d889b71d96.jpg" class="btn btn-primary">Үзэх</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6"> 
+                <div class="card" style="width: 20rem;">
+                    <img src="https://i.pinimg.com/736x/bf/1a/0c/bf1a0ca81dd4d022e47207d69207ef8c.jpg" style="height: 10cm;" class="card-img-top" alt="necklace">
+                    <div class="card-body">
+                        <h5 class="card-title">Хүзүүний зүүлт</h5>
+                        <p class="card-text">Pearl</p>
+                        <h6>41'000</h6>
+                        <a href="uzeh.html?name=Pearl&price=41000&image=https://i.pinimg.com/736x/bf/1a/0c/bf1a0ca81dd4d022e47207d69207ef8c.jpg" class="btn btn-primary">Үзэх</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6"> 
+                <div class="card" style="width: 20rem;">
+                    <img src="https://i.pinimg.com/736x/12/aa/fb/12aafb5a7397bdd615579c36cc232cd1.jpg" style="height: 10cm;" class="card-img-top" alt="necklace">
+                    <div class="card-body">
+                        <h5 class="card-title">Ээмэг</h5>
+                        <p class="card-text">Twins</p>
+                        <h6>30'000</h6>
+                        <a href="uzeh.html?name=Twins&price=30000&image=https://i.pinimg.com/736x/12/aa/fb/12aafb5a7397bdd615579c36cc232cd1.jpg" class="btn btn-primary">Үзэх</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- About Section -->
+    <div class="about-section mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- About Text -->
+                <div class="col-md-8">
+                    <h2 class="about-title">Бид</h2>
+                    <p class="about-text">
+                        <strong>Lilaxie Corset</strong> маань 2015 оноос хойш үйл ажиллагаагаа тасралтгүй явуулсаар ирсэн билээ. Бид өөрсдийн дэлгүүрээ нээж охидынхоо дуртай хувцаснуудыг бэлэн худалдаалдаг бөгөөд инстаграмаар голчлон сошиал үйл ажиллагаагаа явуулдаг байсан.
+                            Манай дэлгүүрт ирж худалдан авалт хийх боломжгүй, завгүй байгаа хүмүүсдээ зориулан энэхүү сайтаа нээж, захиалга авахад бэлэн боллоо. 
+                            Өөрсдөө корсетуудаа хийдэг ба салбар дээр ирээд өөрийн биеийн харьцаа, сонирхолдоо тохируулан захиалж болно.
+                            Та хамгийн загварлаг, чанартай корсетуудаа манайхаас сонгоорой.
+                    </p>
+                    <p class="about-text">
+                        Хаяг:
+                        Их дэлгүүрийн чанх хойно Pearl tower-н урд , 3-р байр
+                        Everyday 10:00-20:00
+                    </p>
+                </div>
+
+                <!-- Quick Links or Contact -->
+                <div class="col-md-4">
+                    <h4 class="about-title">Quick Links</h4>
+                    <ul class="list-unstyled about-links">
+                        <li><a href="bie.html">Үндсэн цэс</a></li>
+                        <li><a href="about.html">Бидний тухай</a></li>
+                        <li><a href="contact.html">Холбоо барих</a></li>
+                        <li><a href="care.html">Арчилгаа</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

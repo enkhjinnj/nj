@@ -1,0 +1,44 @@
+.about-section {
+    background-color: rgb(255, 245, 247); 
+    padding: 50px 20px;
+}
+.about-title {
+    color: #343a40; 
+}
+.about-text {
+    color: #6c757d;
+}
+.about-links a {
+    text-decoration: none; 
+    color: #ff6d86;
+}
+.about-links a:hover {
+    text-decoration: underline; 
+}
+
+.container-fluid {
+    padding: 20px;
+    text-align: center;
+}
+
+.container-fluid a{
+background-color: #ff6d86;
+border: #ff6d86;
+}
+.container-fluid a:hover{
+color: #e05a6d;
+}
+
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: rgb(230, 150, 130); 
+    color: black;
+}
+
+.dropdown-toggle:hover {
+    background-color: rgb(230, 150, 130); 
+}
+
+.d-flex {
+    padding: 10px;
+}
