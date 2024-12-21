@@ -1,3 +1,11 @@
+body {
+    background: url('https://i.pinimg.com/736x/91/e0/29/91e029936e40e3f3b660ba10952f8a89.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: repeat; 
+    height: 100vh; 
+    margin: 0;
+}
 .about-section {
     background-color: rgb(255, 245, 247); 
     padding: 50px 20px;
